@@ -1,0 +1,189 @@
+body{
+    background-color: black;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.characteres{
+    display: flex;
+    gap: 30px;
+    padding: 30px;
+}
+.heroes{
+    display: flex;
+    flex: 1;
+    border: 3px solid red;
+    margin-left: 20px;
+}
+
+.hero_1{
+    background-color: black;
+    color: white;
+    border-right: 3px solid red;
+}
+.hero_2{
+    background-color: black;
+    color: white;
+    
+}
+.hero_1,.hero_2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex:1;
+    padding: 30px;
+}
+
+.hero_1 .image{
+    width: 200px;
+    height: 200px;
+    margin-right: 35px;
+}
+
+.hero_2 .image{
+    width: 200px;
+    height: 200px;
+
+    
+}
+
+.hero_1 .image img{
+    width: inherit;
+    height: inherit;
+}
+
+.hero_2 .image img{
+    width: inherit;
+    height: inherit;
+}
+
+.heroes .text{
+    border: 1px solid white;
+    padding: 20px;
+    margin-top: 40px;
+    text-align: justify;
+
+}
+
+input{
+    margin-top: 20px;
+}
+
+/*Monstros*/
+
+.monsters{
+    display: flex;
+    flex: 1;
+    border: 3px solid red;
+    margin-right: 20px;
+}
+
+.monster_1,.monster_2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    flex: 1;
+}
+
+.monster_1 .image,.monster_2 .image{
+    width: 250px;
+    height: 200px;
+
+}
+
+.monster_1 .image img,.monster_2 .image img{
+    width: inherit;
+    height: inherit;
+}
+
+.monster_1{
+    background-color: black;
+    color: white;
+    border-right: 3px solid red;
+}
+
+.monster_2{
+
+    background-color: black;
+    color: white;
+}
+
+.monster_1 .text{
+    border: 1px solid white;
+    padding: 20px;
+    margin-top: 40px;
+    text-align: justify;
+}
+
+.monster_2 .text{
+    border: 1px solid white;
+    padding: 20px;
+    margin-top: 40px;
+    text-align: justify;
+}
+
+
+.title{
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 30px;
+}
+h1{
+    text-align: center;
+}
+
+.monsters h4,.heroes h4{
+    margin-top: 15px;
+}
+
+.text .some_text{
+    height: 280px;
+}
+
+.characteres h2 {
+    margin-bottom: 30px;
+}
+
+.characteres h4 {
+    margin-bottom: 20px;
+}
+
+.characteres ul li{
+   list-style: none;
+   line-height: 35px;
+}
+
+.send{
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.send .play{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 90px;
+    padding-left: 80px;
+    color: white;
+    background-color: black;
+    border: 2px solid white;
+    
+    border-radius: 20px;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    cursor: pointer;
+
+    
+}
+
+.send .play:hover{
+    background-color: rgb(148, 9, 9);
+    border: 2px solid black;
+    border: 2px solid white;
+}
+
