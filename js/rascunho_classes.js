@@ -75,19 +75,22 @@ let direction2 = 1;
 
 class Scene{
    
-    constructor(player1,player2,player1El,player2El,log){
+    constructor(player1,player2,player1El,player2El,log,logArea,fightArea,endGame){
         this.player1 = player1;
         this.player2 = player2;
         this.player1El = player1El;
         this.player2El = player2El;
         this.log = log;
+        this.logArea = logArea;
+        this.fightArea = fightArea;
+        this.endGame = endGame;
 
     }
 
     start(){
         this.update();
         this.player1El.querySelector('.button button').addEventListener('click',()=>{
-            this.action(this.player1,this.player2,this.log);
+            this.action(this.player1,this.player2,this.log,this.logArea,this.fightArea,this.endGame);
             let timer = setInterval(()=>{
             posX += 10 * direction;
             img.style.left = `${posX}px`;
@@ -102,7 +105,7 @@ class Scene{
             },50);
         });
         this.player2El.querySelector('.button button').addEventListener('click',()=>{
-            this.action(this.player2,this.player1,this.log);
+            this.action(this.player2,this.player1,this.log,this.logArea,this.fightArea,this.endGame);
             let timer2 = setInterval(() => {
                 posX2 -= 10 * direction2;
                 img2.style.left = `${posX2}px`;
@@ -136,10 +139,14 @@ class Scene{
         
     }
 
-    action(attacker,defender,log){
+    action(attacker,defender,log,logArea,fightArea,endGame){
        
         if(defender.life <= 0){
             log.armazena(`${defender.name} esta morto`)
+            logArea.style.display = 'none';
+            fightArea.style.display = 'none'
+            endGame.style.display = 'flex';
+            endGame.querySelector('.end_game_text .f2 span').textContent = `${attacker.name} venceu o jogo`;
             return;
             
         }

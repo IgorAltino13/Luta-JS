@@ -1,57 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Batalha</title>
-    <link rel="stylesheet" href="../css/rascunho.css">
-</head>
-<body>
+    <link rel="stylesheet" href="../css/rascunho.css" />
+  </head>
+  <body>
     <div class="fightArea">
-        <div class="hero">
-            <div class="image">
-                <img src="../images/mago1.png" alt="Imagem de um cavaleiro">
-            </div>
-            <div class="bar">
-                <div class="life"></div>
-            </div>
-            <div class="name">
-                <strong>--</strong>
-            </div>
-            <div class="button">
-                <button>Atacar</button>
-            </div>
+      <div class="hero">
+        <div class="image">
+          <img src="../images/mago1.png" alt="Imagem de um cavaleiro" />
         </div>
-        <div class="monster">
-            <div class="image_2">
-                <img src="../images/littleDragon.png" alt="Imagem de um dragao">
-            </div>
-            
-            <div class="bar">
-                <div class="life"></div>
-            </div>
-            <div class="name">
-                <strong>--</strong>
-            </div>
-            <div class="button">
-                <button>Atacar</button>
-            </div>
+        <div class="bar">
+          <div class="life"></div>
         </div>
+        <div class="name">
+          <strong>--</strong>
+        </div>
+        <div class="button">
+          <button>Atacar</button>
+        </div>
+      </div>
+      <div class="monster">
+        <div class="image_2">
+          <img src="../images/littleDragon.png" alt="Imagem de um dragao" />
+        </div>
+
+        <div class="bar">
+          <div class="life"></div>
+        </div>
+        <div class="name">
+          <strong>--</strong>
+        </div>
+        <div class="button">
+          <button>Atacar</button>
+        </div>
+      </div>
     </div>
     <div class="div_log">
-        <div class="log">
-            <ul>
-    
-            </ul>
+      <div class="log">
+        <ul></ul>
+      </div>
+      <div class="button_log">
+        <button>Limpar Log</button>
+      </div>
+    </div>
+
+    <div class="end_game">
+      <div class="end_game_text">
+        <div class="f1"><span>Fim de jogo</span> <br /></div>
+        <div class="f2">
+            <span></span>
         </div>
-        <div class="button_log">
-            <button>Limpar Log</button>
-        </div>
+        
+      </div>
+      <div class="button_game">
+        <a href="rascunho.html"><button>Reiniciar Jogo</button></a>
+      </div>
     </div>
     
-    
+
     <script src="../js/rascunho_classes.js"></script>
     <script src="../js/rascunho_luta.js"></script>
-</body>
+  </body>
 </html>

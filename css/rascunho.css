@@ -1,6 +1,47 @@
 *{
     box-sizing: border-box;
 }
+
+
+.end_game{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    font-size: 4rem;
+    font-weight: bold;
+    
+
+}
+
+.end_game_text{
+    background-color: rgba(0, 0, 0, 0.082);
+    color: white;
+    border: 1px solid white;
+    position: absolute;
+    height: 280px;
+    width: 50%;
+    top: 25%;
+    left: 25%;
+   padding: 30px;
+}
+
+
+
+
+.button_game{
+    position: absolute;
+    top:73%;
+    left:45%;
+}
+
+.button_game button{
+    padding: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
 body{
     background-color: #ccc;
     color: black;
@@ -72,6 +113,7 @@ body{
     padding: 15px;
     border: 1px solid black;
     border-radius: 5px;
+    cursor: pointer;
 }
 .log{
     overflow-y: scroll;
